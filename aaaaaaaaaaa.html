@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a = [1,2] //已有头发
+        var b = [3,4,5,1,2] //所有头发
+        var c = [] //已有头发在所有头发数组里的下标
+        function fn(i) {
+            let index = b.findIndex((v) => {
+                return v === i
+            })
+            c.push(index)
+        }
+        a.forEach((i) => {
+            fn(i)
+        })
+        console.log(c);
+        
+        
+    </script>
+</body>
+</html>
